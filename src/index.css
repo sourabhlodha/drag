@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.boxesGroup {
+  /* main layout to display nested boxes */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  place-items: center;
+  /* decorating */
+  background-color: lightgrey;
+  /* drag style */
+  cursor: default;
+}
+
+.box {
+  /* nested boxes */
+  height: 100px;
+  width: 150px;
+  /* decorating */
+  border-radius: 10px;
+  /* drag style */
+  cursor: move;
+}
+
+.content {
+  /* centering content in box */
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* decorating */
+  font-weight: bold;
+}
+
